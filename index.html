@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validaciones Formulario</title>
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+	<div class="custom-overlay-panel">
+		<div class="custom-toast-container"></div>
+	</div>
+  <div class="container">
+    <span></span>
+    <div class="card card-form">
+      <h2>
+        <span class="text-muted">Conversor de Monedas</span>
+      </h2>
+      <form action="" class="form" novalidate>
+        <div class="group">
+          <label for="selFirstCurrency">Tengo esta moneda/divisa</label>
+          <div class="select-custom">
+            <img src="https://www.lifeder.com/wp-content/uploads/2018/11/bandera-1777-1795-dise%C3%B1o-normal.png" height="17"/>
+            <select name="selFirstCurrency" id="selFirstCurrency"></select>
+            <span class="currency-code">USD</span>
+          </div>
+        </div>
+        <div class="group">
+          <label for="selSecondCurrency">Quiero esta moneda/divisa</label>
+          <div class="select-custom">
+            <img src="https://www.lifeder.com/wp-content/uploads/2018/11/bandera-1777-1795-dise%C3%B1o-normal.png" height="17"/>
+            <select name="selSecondCurrency" id="selSecondCurrency"></select>
+            <span class="currency-code">USD</span>
+          </div>
+        </div>
+        <div class="group">
+          <label for="txtFirstCurrency">IMPORTE:</label>
+          <input type="number" name="txtFirstCurrency" id="txtFirstCurrency" placeholder="0.00" pattern="[0-9]" required />
+        </div>
+        <div class="group">
+          <label for="txtSecondCurrency">IMPORTE:</label>
+          <input type="number" name="txtSecondCurrency" id="txtSecondCurrency" placeholder="0.00" pattern="[0-9]" required />
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <span>Carlos Daniel Marcucci Rivera</span>
+    </div>
+  </div>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
